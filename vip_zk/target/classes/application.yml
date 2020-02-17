@@ -1,0 +1,24 @@
+####服务端口号
+#server:
+#  port: 8010
+#spring:
+#  application:
+#    name: vip
+####eureka 基本信息配置
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8100/eureka,http://localhost:8101/eureka,http://localhost:8102/eureka
+
+###订单服务的端口号
+server:
+  port: 8002
+###服务别名----服务注册到注册中心名称
+spring:
+  application:
+    name: vip-zk
+  cloud:
+    zookeeper:
+      connect-string1: 127.0.0.1:2181
+      discovery:
+        enabled: true

@@ -1,0 +1,13 @@
+###服务端口号
+###订单服务的端口号
+server:
+  port: 8003
+###服务别名----服务注册到注册中心名称
+spring:
+  application:
+    name: order-zk
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+
+
